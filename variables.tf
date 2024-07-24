@@ -1,5 +1,6 @@
 
 # define AWS Region
+
 variable "region" {
   description = "This is aws region"
   type        = string
@@ -7,6 +8,7 @@ variable "region" {
 }
 
 # define subnet variables
+
 variable "subnet_cidr_private" {
   description = "cidr blocks for the private subnets"
   default     = ["10.20.20.0/28", "10.20.20.16/28"]

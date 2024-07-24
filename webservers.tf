@@ -1,6 +1,7 @@
 
 
 # launch 2 EC2 instances and install apache 
+
 resource "aws_instance" "web-server" {
   count                       = length(var.subnet_cidr_private)
   instance_type               = "t2.micro"

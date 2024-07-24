@@ -1,5 +1,6 @@
 
 # Create a security group
+
 resource "aws_security_group" "web-server" {
   name        = "allow_http_access"
   description = "allow http traffic from alb"

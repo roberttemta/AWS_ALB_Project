@@ -1,5 +1,6 @@
 
 # Create a target group
+
 resource "aws_lb_target_group" "alb-target-group" {
   name     = "application-lb-tg"
   port     = 80
@@ -20,6 +21,7 @@ resource "aws_lb_target_group" "alb-target-group" {
 }
 
 # Attach the target group to the AWS instances
+
 resource "aws_lb_target_group_attachment" "attach-app" {
   count            = length(aws_instance.web-server)
   target_group_arn = aws_lb_target_group.alb-target-group.arn

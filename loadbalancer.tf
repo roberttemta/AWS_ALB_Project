@@ -1,5 +1,6 @@
 
 # Create the load balancer
+
 resource "aws_lb" "application-lb" {
   name               = "application-lb"
   internal           = false

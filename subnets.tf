@@ -1,5 +1,6 @@
 
 # create a subnet
+
 resource "aws_subnet" "private" {
   count             = length(var.subnet_cidr_private)
   vpc_id            = aws_vpc.alb_vpc.id

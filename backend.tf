@@ -1,3 +1,4 @@
+# Creating a backend for our code with S3 and DynamoDB
 
 terraform {
   backend "s3" {
