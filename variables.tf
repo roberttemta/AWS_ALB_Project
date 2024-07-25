@@ -11,7 +11,7 @@ variable "region" {
 
 variable "subnet_cidr_private" {
   description = "cidr blocks for the private subnets"
-  default     = ["10.20.20.0/28", "10.20.20.16/28"]
+  default     = ["10.20.1.0/24", "10.20.2.0/24"]                 # why the second subnet has a CIDR OF 10.20.20.16/28
   type        = list(any)
 }
 
