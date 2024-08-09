@@ -2,7 +2,7 @@
 # Create a security group
 
 resource "aws_security_group" "web-server" {
-  name        = "allow_http_access"
+  name        = "web-server-sg"
   description = "allow http traffic from alb"
   vpc_id      = aws_vpc.alb_vpc.id
 
